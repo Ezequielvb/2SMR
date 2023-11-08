@@ -1,0 +1,87 @@
+/**********************************************************/
+/* Aqui va el comentario del trabajo                      */
+
+/**********************************************************/
+
+/***** FUENTES *****/
+@font-face {
+    font-family: texto;
+    src: url(../font/1GandhiSerif-BoldItalic.otf);
+}
+@font-face {
+    font-family: titulo;
+    src: url(../font/ButterChicken-rgxpK.otf);
+}
+
+/*****************************  layout  *************************************/
+
+body {
+    background-color: rgb(167, 166, 165);
+    color: white;
+    font-family: texto;
+    font-size: 1.5em;
+}
+#wrapper {
+    width: 80%;
+    background-color: rgb(85, 50, 50);
+    margin: auto;
+    font-family: texto;
+}
+
+/************************** barra de navegación *****************************/
+
+nav {
+    font-family: titulo;
+    font-size: 1.7em;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(85, 50, 50);
+    color: #fff;
+    padding: 10px;
+  }
+
+/*********************** hero section *************************/
+
+#hero {
+    background-image: url(../img/IMG1.jpg);
+    height: 80vh;             /*Forzar el alto de la hero para ver la foto*/
+    background-size: cover;   /* estira la foto para verla encajar*/
+    background-position: 20%; /* donde esta el punto de interes */
+    font-family: texto;
+    color: black;
+    font-size: 3em;
+    padding-left: 65%;
+    padding-top: 10px;
+    text-align:center;
+    
+}
+
+/*************************** Start ******************************/
+
+blockquote {border-left: 3px solid rgb(0, 0, 0);
+    font-style: italic;
+    padding: 10px;
+    background-color: #fdedd0;
+    box-shadow: 10px 10px 20px black;
+    color:black}
+
+/************************** Gallery *****************************/
+
+#Galley{
+    text-align: center;
+    margin: 10%;
+    
+}
+
+/**************************responsividad***********************/
+
+@media only screen and (width<650px){
+    #wrapper {width: 95%;}
+    #hero {background-image: url(../img/logo.jpg);}
+}
