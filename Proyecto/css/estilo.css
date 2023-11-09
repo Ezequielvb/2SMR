@@ -16,13 +16,14 @@
 /*****************************  layout  *************************************/
 
 body {
-    background-color: rgb(167, 166, 165);
+    margin-top: 0%; padding: 0%;
+    background-color: rgb(85, 50, 50);
     color: white;
     font-family: texto;
     font-size: 1.5em;
 }
 #wrapper {
-    width: 80%;
+    width: 90%;
     background-color: rgb(85, 50, 50);
     margin: auto;
     font-family: texto;
@@ -30,21 +31,31 @@ body {
 
 /************************** barra de navegación *****************************/
 
+
+.nav-enlace {
+    font-size: 30px;
+    display:inline-block;
+    background: #fdedd0;
+    background-color: rgb(85, 50, 50);
+    color: #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+}
+.nav-enlace:hover{
+    background: #fdedd0;
+    color:black
+
+}
+
 nav {
     font-family: titulo;
     font-size: 1.7em;
     padding-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.navbar {
+    padding-top: 0px;
     position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgb(85, 50, 50);
-    color: #fff;
-    padding: 10px;
-  }
+}
 
 /*********************** hero section *************************/
 
@@ -52,13 +63,13 @@ nav {
     background-image: url(../img/IMG1.jpg);
     height: 80vh;             /*Forzar el alto de la hero para ver la foto*/
     background-size: cover;   /* estira la foto para verla encajar*/
-    background-position: 20%; /* donde esta el punto de interes */
+    background-position: 10%; /* donde esta el punto de interes */
     font-family: texto;
     color: black;
-    font-size: 3em;
-    padding-left: 65%;
-    padding-top: 10px;
-    text-align:center;
+    font-size: 2em;
+    text-align: center;
+    padding-left: 800px;
+    padding-top: 20px;
     
 }
 
@@ -73,10 +84,15 @@ blockquote {border-left: 3px solid rgb(0, 0, 0);
 
 /************************** Gallery *****************************/
 
-#Galley{
-    text-align: center;
-    margin: 10%;
-    
+.imagen{
+    width: 40%;
+    height: 20%;
+    margin: auto;
+    display: inline-block;
+}
+
+.scream{
+    background: rgb(233, 103, 168) url(../img/IMG3.jpg) no-repeat right top
 }
 
 /**************************responsividad***********************/
