@@ -83,6 +83,7 @@ nav {
 
 #hero {
     background-image: url(../img/IMG1.jpg);
+    /*width: 30%;*/
     height: 80vh;             /*Forzar el alto de la hero para ver la foto*/
     background-size: cover;   /* estira la foto para verla encajar*/
     background-position: 10%; /* donde esta el punto de interes */
@@ -90,7 +91,7 @@ nav {
     color: black;
     font-size: 2em;
     text-align: center;
-    padding-left: 800px;
+    padding-right: 20px;
     padding-top: 20px;
     
 }
@@ -98,6 +99,7 @@ nav {
 #zk {
     font-family: titulo;
     font-size: 80px;
+    margin-left: 40%;
 }
 
 /*************************** Start ******************************/
@@ -108,12 +110,28 @@ blockquote {border-left: 3px solid rgb(0, 0, 0);
     background-color: #fdedd0;
     box-shadow: 10px 10px 20px black;
     color:black;
-    margin-top: 60px;
+    margin-top: 30px;
+}
+
+#intro {
+    padding: 5%;
+}
+
+
+#Trapillo {
+    width: 40%;
+    float: left;
+    margin: 5px 15px 5px 0px;
+}
+
+#parrafo1 {
+    font-size: 30px;
+    text-align: justify;
 }
 
 /************************** Gallery *****************************/
 
-#g1 {
+.titu1 {
     font-family: titulo;
     font-size: 60px;
     text-align: center;
@@ -131,7 +149,7 @@ blockquote {border-left: 3px solid rgb(0, 0, 0);
     width: 500px;
     height: 800px;
     margin-right: 60%;
-    margin-left: 35%;
+    margin-left: 10%;
     margin-top: 40px;
 }
 
@@ -151,13 +169,20 @@ blockquote {border-left: 3px solid rgb(0, 0, 0);
 .c3 {
     width: 500px;
     height: 800px;
-    margin-left: 70%;
+    margin-left: 60%;
     margin-top: 40px;
 }
 
 /**************************responsividad***********************/
 
 @media only screen and (width<650px){
-    #wrapper {width: 95%;}
+    #wrapper {width: 100%;}
     /*#hero {background-image: url(../img/logo.jpg);}*/
+    #Trapillo {width: 100%;}
+    #hero {background-image: url(../img/IMG2.jpg);
+    }
+    #zk {
+        margin-top: 400px;
+        text-align: center;
+    }
 }
