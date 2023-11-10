@@ -1,6 +1,6 @@
 /**********************************************************/
-/* Aqui va el comentario del trabajo                      */
-
+/*                  Primera versión                       */
+/*               Autor: Ezequiel Vargas                   */
 /**********************************************************/
 
 /***** FUENTES *****/
@@ -92,14 +92,14 @@ nav {
     font-size: 2em;
     text-align: center;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
     
 }
 
 #zk {
     font-family: titulo;
     font-size: 80px;
-    margin-left: 40%;
+    margin-left: 50%;
 }
 
 /*************************** Start ******************************/
@@ -182,7 +182,8 @@ blockquote {border-left: 3px solid rgb(0, 0, 0);
     #hero {background-image: url(../img/IMG2.jpg);
     }
     #zk {
-        margin-top: 400px;
+        margin-top: 170%;
+        margin-left: 10%;
         text-align: center;
     }
 }
