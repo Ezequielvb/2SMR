@@ -230,10 +230,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .footer-info,
-    .footer-redes-sociales {
-        margin: 10px 0; /* Ajusta el margen para dispositivos móviles */
-    }
+    
 }
 
 
@@ -243,7 +240,8 @@ footer {
     }
     .footer-info,
     .footer-redes-sociales {
-        flex: 0 0 48%; /* Ajusta el ancho de las cajas en modo retrato de iPad */
-        margin: 10px; /* Ajusta el margen */
+        margin: 10px 0; 
+        padding: 0px;
+        font-size: 0.9em;
     }
 }
