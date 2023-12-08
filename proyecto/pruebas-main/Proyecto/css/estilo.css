@@ -248,6 +248,15 @@ footer {
 /**************************responsividad***********************/
 
 @media only screen and (width<650px){
+
+    #cr3 {
+        display: none;
+    }
+    #cr2 {
+        display: none;
+    }
+
+
     #wrapper {width: 100%;}
     /*#hero {background-image: url(../img/logo.jpg);}*/
     #Trapillo {width: 100%;}
