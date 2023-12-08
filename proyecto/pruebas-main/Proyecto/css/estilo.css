@@ -264,9 +264,9 @@ footer {
     }
 }
 @media (max-width: 600px) {
-    #cr3 {
+    /*#cr3 {
         display: none;
-    }
+    }*/
     #cr1 {
         width: 7px;
         height: 180px;
@@ -302,6 +302,7 @@ footer {
 
     .boton {
         margin: 10px;
+        font-size: 30px;
     }
 }
 
