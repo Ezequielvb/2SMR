@@ -230,6 +230,13 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .footer-info,
+    .footer-redes-sociales {
+        margin: 10px 0; 
+        padding: 0px;
+        font-size: 0.9em;
+    }
+
     
 }
 
