@@ -167,7 +167,7 @@ blockquote {border-left: 3px solid rgb(0, 0, 0);
     margin-bottom: 200px;
     margin-left: 37%;
     margin-top: 100px;
-    padding: 15px 20px; /* Ajusta el tamaño del botón modificando estos valores */
+    padding: 20px 30px; /* Ajusta el tamaño del botón modificando estos valores */
     font-size: 36px; /* Ajusta el tamaño del texto */
     font-weight: bold;
     text-align: center;
@@ -264,9 +264,9 @@ footer {
     }
 }
 @media (max-width: 600px) {
-    #cr3 {
+    /*#cr3 {
         display: none;
-    }
+    }*/
     #cr1 {
         width: 7px;
         height: 180px;
@@ -314,7 +314,6 @@ footer {
     .boton {
         margin: 90px;
         font-size: 20px;
-        padding: 50px;
     }
 }
 
@@ -332,4 +331,9 @@ footer {
         text-align: center;
     }
 
+    .boton {
+        margin-left: 200px;
+        font-size: 20px;
+        padding: 30px;
+    }
 }
