@@ -347,5 +347,9 @@ footer {
         font-size: 20px;
         padding: 30px;
     }
+
+    #cr3{
+        display: none;
+    }
 }
 
