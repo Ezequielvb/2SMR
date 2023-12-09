@@ -1,0 +1,305 @@
+/**********************************************************/
+/*               Primera versión estilo2                  */
+/*               Autor: Ezequiel Vargas                   */
+/**********************************************************/
+
+/*********************** Fuentes *************************/
+
+@font-face {
+    font-family: texto;
+    src: url(../font/1GandhiSerif-BoldItalic.otf);
+}
+@font-face {
+    font-family: titulo;
+    src: url(../font/ButterChicken-rgxpK.otf);
+}
+
+/********************* Wrapper **************************/
+
+body {
+    margin-top: 0%; padding: 0%;
+    background-color: rgb(85, 50, 50);
+    color: white;
+    font-family: texto;
+    font-size: 1.5em;
+    text-align: center;
+    
+    
+}
+#wrapper {
+    width: 90%;
+    background-color: rgb(85, 50, 50);
+    
+    font-family: texto;
+}
+
+
+/*************** Barra de navegación **********************/
+
+nav {
+    
+    color: #fff;
+    padding: 10px;
+    font-family: titulo;
+    margin: 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a{
+    font-size: 30px;
+    color: rgb(85, 50, 50);
+    background-color: #fdedd0;
+    padding: 5px 15px;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px black;
+    
+}
+
+.navb {
+    margin-top: 140px;
+    overflow: hidden;
+}
+
+.navb a{
+    font-size: 30px;
+    display:inline-block;
+    background-color: #fdedd0;
+    color: rgb(107, 42, 42);
+    padding: 5px 15px;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+}
+
+.navb a:hover {
+    background-color: #fdedd0;
+    color: rgb(0, 0, 0);
+    font-size: 31px;
+}
+
+  
+.navb a.active {
+    background-color: #fdedd0;
+    color: rgb(85, 50, 50);
+}
+
+  
+.navb .icon {
+    display: none;
+} 
+
+/****************** Cesta ***************************/
+
+
+
+#cesta-icono {
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 50%;
+    border: 4px solid #000000;
+    background-color: #fdedd0;
+    position: absolute;
+    top: 20px; 
+    right: 25px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+}
+
+#cesta-icono:hover {
+    color: #ffffff;
+    transform: scale(1.02);
+}
+
+#contador-cesta {
+    background-color: #89e976;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+/***************** hero *********************************/
+
+#hero {
+    background-image: url(../img/main.jpg);
+    height: 20vh;             
+    background-size: cover;   
+    background-position: 50%; 
+    font-family: texto;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 40px;
+    
+}
+
+
+
+/******************* Productos ***************************/
+
+.titulos-producto {
+    color: #ffffff;
+    margin: 150px 0px 100px 0px;
+    font-family: titulo;
+    font-size: 2.5em;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 60px;
+    justify-content: center; 
+    margin: 60px;
+}
+
+.producto {
+    border: 4px solid #000000;
+    padding:15px;
+    text-align: center; 
+    background-color: #fdedd0;
+    color: #000000;
+    
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto:hover{
+    transform: scale(1.02);
+    
+}
+
+/**************** Boton **************************/
+
+.producto button {
+    color:#fdedd0;
+    background-color: rgb(85, 50, 50);
+    cursor: pointer;
+}
+
+
+/***************** Footer *************************/
+
+footer {
+    background-color: rgb(85, 50, 50);
+    color: #000000;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 200px;
+    font-family: texto;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px; 
+}
+
+.footer-info,
+.footer-redes-sociales {
+    flex: 1;
+    border: 4px solid #000000;
+    margin: 10px;
+    background-color: #fdedd0;
+}
+
+.footer-info h3,
+.footer-redes-sociales h3 {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    font-family: titulo;
+    font-size: 1.4em;
+}
+
+.footer-info p{
+    font-family: texto;
+}
+.footer-redes-sociales a {
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    
+}
+
+.footer-redes-sociales a {
+    transition: color 0.3s ease;
+}
+
+.footer-redes-sociales a:hover {
+    color: rgb(85, 50, 50);
+    font-size: 1.1em;
+    text-decoration:underline;
+}
+
+
+/****************** Responsividad *************************/
+
+@media (max-width: 600px) {
+    .navb {
+        font-size: 0.3em;
+    }
+
+    #primertitulo {
+        margin-top: 250px;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr; 
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-info,
+    .footer-redes-sociales {
+        margin: 10px 0; 
+        padding: 0px;
+        font-size: 0.9em;
+    }
+    #cesta-icono {
+        font-size: 16px;
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .container{
+    grid-template-columns: 1fr;
+    }
+    .footer-info,
+    .footer-redes-sociales {
+        margin: 10px 0; 
+        padding: 0px;
+        font-size: 0.9em;
+    }
+    #cesta-icono {
+        font-size: 20px;
+    }
+}
