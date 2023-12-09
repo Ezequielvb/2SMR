@@ -2,6 +2,7 @@
 /*      autor: Ezequiel Vargas */
 
 
+/************** nav *****************************/
 
 function myFunction() {
     var x = document.getElementById("topnav");
