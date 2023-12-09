@@ -3,7 +3,7 @@
 /*               Autor: Ezequiel Vargas                   */
 /**********************************************************/
 
-/* Fuentes */
+/*********************** Fuentes *************************/
 
 @font-face {
     font-family: texto;
@@ -14,7 +14,7 @@
     src: url(../font/ButterChicken-rgxpK.otf);
 }
 
-/* Wrapper */
+/********************* Wrapper **************************/
 
 body {
     margin-top: 0%; padding: 0%;
@@ -34,7 +34,7 @@ body {
 }
 
 
-                /* Barra de navegación */
+/*************** Barra de navegación **********************/
 
 nav {
     
@@ -70,7 +70,6 @@ nav a{
     overflow: hidden;
 }
 
-  /* Estilos del nav */
 .navb a{
     font-size: 30px;
     display:inline-block;
@@ -82,7 +81,6 @@ nav a{
     overflow: hidden;
 }
 
-  /* Colores al estar pulsados */
 .navb a:hover {
     background-color: #fdedd0;
     color: rgb(0, 0, 0);
@@ -100,7 +98,46 @@ nav a{
     display: none;
 } 
 
-/*****************Imagen*********************************/
+/****************** Cesta ***************************/
+
+
+
+#cesta-icono {
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 50%;
+    border: 4px solid #000000;
+    background-color: #fdedd0;
+    position: absolute;
+    top: 20px; 
+    right: 25px;
+    padding: 10px;
+    position: fixed;
+}
+
+#cesta-icono:hover {
+    color: #ffffff;
+}
+
+#contador-cesta {
+    background-color: #89e976;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+/***************** Imagen *********************************/
 
 #hero {
     background-image: url(../img/main.jpg);
@@ -118,7 +155,7 @@ nav a{
 
 
 
-                /* Productos */
+/******************* Productos ***************************/
 
 .titulos-producto {
     color: #ffffff;
@@ -148,15 +185,16 @@ nav a{
     height: auto;
 }
 
-/****************Boton**************************/
+/**************** Boton **************************/
 
 .producto button {
     color:#fdedd0;
     background-color: rgb(85, 50, 50);
+    cursor: pointer;
 }
 
 
-/*****************Footer*************************/
+/***************** Footer *************************/
 
 footer {
     background-color: rgb(85, 50, 50);
@@ -212,7 +250,8 @@ footer {
 }
 
 
-/* Responsividad */
+/****************** Responsividad *************************/
+
 @media (max-width: 600px) {
     .navb {
         font-size: 0.3em;
@@ -235,7 +274,9 @@ footer {
         padding: 0px;
         font-size: 0.9em;
     }
-
+    #cesta-icono {
+        font-size: 16px;
+    }
     
 }
 
@@ -249,5 +290,8 @@ footer {
         margin: 10px 0; 
         padding: 0px;
         font-size: 0.9em;
+    }
+    #cesta-icono {
+        font-size: 20px;
     }
 }

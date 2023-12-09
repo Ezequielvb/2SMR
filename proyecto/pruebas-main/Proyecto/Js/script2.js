@@ -2,7 +2,20 @@
 /*      autor: Ezequiel Vargas */
 
 
+/********** Cesta *************/
 
-function agregarAlCarrito(nombreProducto, precioProducto) {
-    console.log(`Producto agregado al carrito: ${nombreProducto} - Precio: $${precioProducto}`);
+let carrito = [];
+let totalCarrito = 0;
+
+function agregarAlCarrito(nombre, precio) {
+    carrito.push({ nombre, precio });
+    totalCarrito += precio;
+
+    actualizarContadorCesta();
 }
+
+function actualizarContadorCesta() {
+    const contadorCesta = document.getElementById('contador-cesta');
+    contadorCesta.textContent = carrito.length;
+}
+
