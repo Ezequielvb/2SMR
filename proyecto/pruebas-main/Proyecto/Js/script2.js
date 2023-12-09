@@ -12,6 +12,7 @@ function agregarAlCarrito(nombre, precio) {
     totalCarrito += precio;
 
     actualizarContadorCesta();
+
 }
 
 function actualizarContadorCesta() {
