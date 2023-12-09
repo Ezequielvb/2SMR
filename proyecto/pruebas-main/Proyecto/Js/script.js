@@ -1,4 +1,7 @@
-/* */
+/*      primer script          */
+/*      autor: Ezequiel Vargas */
+
+
 
 function myFunction() {
     var x = document.getElementById("topnav");

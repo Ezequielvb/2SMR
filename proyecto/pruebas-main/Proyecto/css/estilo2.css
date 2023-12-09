@@ -89,13 +89,13 @@ nav a{
     font-size: 31px;
 }
 
-  /* Add an active class to highlight the current page */
+  
 .navb a.active {
     background-color: #fdedd0;
     color: rgb(85, 50, 50);
 }
 
-  /* Hide the link that should open and close the topnav on small screens */
+  
 .navb .icon {
     display: none;
 } 
@@ -104,10 +104,9 @@ nav a{
 
 #hero {
     background-image: url(../img/main.jpg);
-    /*width: 30%;*/
-    height: 20vh;             /*Forzar el alto de la hero para ver la foto*/
-    background-size: cover;   /* estira la foto para verla encajar*/
-    background-position: 50%; /* donde esta el punto de interes */
+    height: 20vh;             
+    background-size: cover;   
+    background-position: 50%; 
     font-family: texto;
     color: black;
     font-size: 2em;
@@ -171,8 +170,8 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-    gap: 50px; /* Espacio entre las columnas */
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px; 
 }
 
 .footer-info,

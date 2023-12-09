@@ -104,9 +104,9 @@ nav {
 #hero {
     background-image: url(../img/main.jpg);
     /*width: 30%;*/
-    height: 80vh;             /*Forzar el alto de la hero para ver la foto*/
-    background-size: cover;   /* estira la foto para verla encajar*/
-    background-position: 50%; /* donde esta el punto de interes */
+    height: 80vh;            
+    background-size: cover;   
+    background-position: 50%; 
     font-family: texto;
     color: black;
     font-size: 2em;
@@ -167,26 +167,24 @@ blockquote {border-left: 3px solid rgb(0, 0, 0);
     margin-bottom: 200px;
     margin-left: 37%;
     margin-top: 100px;
-    padding: 20px 30px; /* Ajusta el tamaño del botón modificando estos valores */
-    font-size: 36px; /* Ajusta el tamaño del texto */
+    padding: 20px 30px; 
+    font-size: 36px; 
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    background-color: #ffffff; /* Color de fondo del botón */
-    color: #000000; /* Color del texto del botón */
+    background-color: #ffffff; 
+    color: #000000; 
     border: none;
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
-
-    /* Agregar sombra al botón (opcional) */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     
 }
 
 .boton:hover {
-    background-color:#fdedd0; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+    background-color:#fdedd0;
 }
 
 
@@ -204,8 +202,8 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-    gap: 50px; /* Espacio entre las columnas */
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px; 
 }
 
 .footer-info,
@@ -253,7 +251,6 @@ footer {
 
 
     #wrapper {width: 100%;}
-    /*#hero {background-image: url(../img/logo.jpg);}*/
     #Trapillo {width: 100%;}
     #hero {background-image: url(../img/IMG2.jpg);
     }
