@@ -326,8 +326,9 @@ footer {
         grid-template-columns: 1fr;
     }
     #zk {
-        margin-top: 105px;
+        margin-top: 680px;
         text-align: center;
+        margin-left: 20px;
     }
 
     .boton {
