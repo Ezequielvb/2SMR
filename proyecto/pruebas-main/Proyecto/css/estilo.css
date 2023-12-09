@@ -326,8 +326,7 @@ footer {
         grid-template-columns: 1fr;
     }
     #zk {
-        margin-top: 105%;
-        margin-left: 5%;
+        margin-top: 105px;
         text-align: center;
     }
 
