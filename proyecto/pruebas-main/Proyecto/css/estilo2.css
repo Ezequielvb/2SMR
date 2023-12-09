@@ -115,10 +115,12 @@ nav a{
     right: 25px;
     padding: 10px;
     position: fixed;
+    z-index: 1;
 }
 
 #cesta-icono:hover {
     color: #ffffff;
+    transform: scale(1.02);
 }
 
 #contador-cesta {
@@ -137,7 +139,7 @@ nav a{
 
 
 
-/***************** Imagen *********************************/
+/***************** hero *********************************/
 
 #hero {
     background-image: url(../img/main.jpg);
@@ -178,11 +180,17 @@ nav a{
     text-align: center; 
     background-color: #fdedd0;
     color: #000000;
+    
 }
 
 .producto img {
     max-width: 100%;
     height: auto;
+}
+
+.producto:hover{
+    transform: scale(1.02);
+    
 }
 
 /**************** Boton **************************/
