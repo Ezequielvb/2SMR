@@ -7,11 +7,25 @@
     <link rel="stylesheet" href="./css/estilo2.css">
     <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
     <script src="Js/script2.js"></script>
+    <script src="https://kit.fontawesome.com/0997de5efa.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div id="wapper">
 
         <section id="hero">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        
+            <div id="menu" class="menu">
+                <a href="./index.html">HOME</a>
+                <a href="#primertitulo">PRODUCTS</a>
+                <a href="#Contacto">CONTACT</a>
+                <img src="./img/logo.jpg">
+            </div>
             
             <a href="#" id="cesta-icono" onclick="mostrarCesta()">
                 🛒
@@ -113,17 +127,26 @@
         <div class="container">
             <div class="footer-info">
                 <h3>Contact</h3>
-                
                 <p>E-mail: toulousefrance1@gmail.com</p>
                 <p>Phone number: +34 626847908</p>
             </div>
             <div class="footer-redes-sociales">
                 <h3>Social networks</h3>
-                <a href="https://www.facebook.com/rocio.berrocalmedina" target="_blank">Facebook</a>
-                <a href="https://instagram.com/zkn.home?igshid=MzMyNGUyNmU2YQ==" target="_blank">Instagram</a>
-                <a href="https://www.tiktok.com/@Zkn.home" target="_blank">Tiktok</a>
+                <div class="columnas-redes">
+                    <a class="logos" id="logo-facebook" href="https://www.facebook.com/rocio.berrocalmedina" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        
+                    </a>
+                    <a class="logos" id="logo-instagram" href="https://instagram.com/zkn.home?igshid=MzMyNGUyNmU2YQ==" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="logos" id="logo-tiktok" href="https://www.tiktok.com/@Zkn.home" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
+    
 </body>
 </html>
