@@ -1,0 +1,360 @@
+/**********************************************************/
+/*                  Primera versión                       */
+/*               Autor: Ezequiel Vargas                   */
+/**********************************************************/
+
+/***** FUENTES *****/
+@font-face {
+    font-family: texto;
+    src: url(../font/1GandhiSerif-BoldItalic.otf);
+}
+@font-face {
+    font-family: titulo;
+    src: url(../font/ButterChicken-rgxpK.otf);
+}
+
+/*****************************  layout  *************************************/
+
+body {
+    margin-top: 0%; padding: 0%;
+    background-color: rgb(85, 50, 50);
+    color: white;
+    font-family: texto;
+    font-size: 1.5em;
+    align-items: center;
+}
+#wrapper {
+    width: 90%;
+    background-color: rgb(85, 50, 50);
+    margin: auto;
+    font-family: texto;
+}
+
+/************************** barra de navegación *****************************/
+
+
+
+#cr1 {
+    width: 9px;
+    height: 80px;
+    padding-left: 70px;
+    position: fixed;
+}
+
+#cr2 {
+    width: 9px;
+    height: 80px;
+    padding-left: 200px;
+    position: fixed;
+}
+
+#cr3 {
+    width: 9px;
+    height: 80px;
+    padding-left: 338px;
+    position: fixed;
+}
+
+nav {
+    font-family: titulo;
+    font-size: 1.7em;
+    padding-left: 20px;
+    padding-top: 40px;
+    position: fixed;
+}
+
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a{
+    font-size: 30px;
+    display:inline-block;
+    background: #fdedd0;
+    background-color: rgb(85, 50, 50);
+    color: #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+}
+
+.topnav a:hover {
+    background-color: #fdedd0;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #fdedd0;
+    color: rgb(85, 50, 50);
+}
+
+.topnav .icon {
+    display: none;
+} 
+
+html {scroll-behavior: smooth;}
+
+/*********************** hero section *************************/
+
+#hero {
+    background-image: url(../img/main.jpg);
+    /*width: 30%;*/
+    height: 80vh;            
+    background-size: cover;   
+    background-position: 50%; 
+    font-family: texto;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+#zk {
+    font-family: titulo;
+    display: flex;
+    font-size: 120px;
+    align-items: center;
+    justify-content: center;
+    height: 160vh;
+
+}
+
+/*************************** Start ******************************/
+
+blockquote {border-left: 3px solid rgb(0, 0, 0);
+    font-style: italic;
+    font-size: 1.3em;
+    padding: 15px;
+    background-color: #fdedd0;
+    box-shadow: 10px 10px 20px black;
+    color:black;
+    margin-top: 100px;
+}
+
+.titu1 {
+    font-family: titulo;
+    font-size: 2.9em;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#intro {
+    padding: 5%;
+}
+
+
+#Trapillo {
+    width: 40%;
+    float: left;
+    margin: 5px 15px 5px 0px;
+}
+
+#parrafo1 {
+    font-size: 30px;
+    text-align: justify;
+}
+
+
+/************* Botones ****************/
+
+/************** Saber mas ****************/
+
+.boton-saber-mas {
+    background-color: #fdedd0;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.boton {
+    display: inline-block;
+    padding: 20px 30px; 
+    font-size: 36px; 
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ffffff; 
+    color: #000000; 
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.boton:hover {
+    background-color:#fdedd0;
+}
+
+/***************** Footer *************************/
+
+footer {
+    background-color: rgb(85, 50, 50);
+    color: #000000;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 200px;
+    font-family: texto;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px; 
+}
+
+.footer-info,
+.footer-redes-sociales {
+    flex: 1;
+    border: 4px solid #000000;
+    margin: 10px;
+    background-color: #fdedd0;
+    text-align: center;
+}
+
+.columnas-redes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.footer-info h3,
+.footer-redes-sociales h3 {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    font-family: titulo;
+    font-size: 1.4em;
+}
+
+.footer-info p{
+    font-family: texto;
+}
+.footer-redes-sociales a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 25px;
+    flex:1;
+    
+}
+
+/******************* Logos *****************************/
+
+.logos{
+    font-size: 80px;
+    
+}
+.logos:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; 
+
+}
+
+#logo-facebook{
+    color: #1877f2;
+}
+#logo-instagram{
+    color: #bc2a8d;
+}
+#logo-tiktok{
+    color: #00a1f5;
+}
+
+
+/************************** responsividad ***********************/
+
+@media only screen and (width<650px){
+
+    
+    #zk{
+        font-size: 80px;
+    }
+
+    #wrapper {width: 100%;}
+    #Trapillo {width: 100%;}
+    #hero {background-image: url(../img/IMG2.jpg);
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #cr3 {
+        display: none;
+    }
+    #cr1 {
+        width: 7px;
+        height: 180px;
+        padding-left: 60px;
+        position: fixed;
+    }
+    
+    #cr2 {
+        display: none;
+    }
+
+    .topnav {
+        margin-right: 0px;
+        padding-right: 300px;
+        font-size: 0.4em;
+    }
+    .topnav a{
+        font-size: 19px;
+    }
+
+    .titu1 {
+        font-size: 1.5em;
+    }
+
+    blockquote {
+        font-size: 1.1em;
+        padding: 10px;
+        
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-info,
+    .footer-redes-sociales {
+        margin: 10px 0; 
+        padding: 0px;
+        font-size: 0.9em;
+    }
+    .boton {
+        font-size: 25px;
+    }
+    .logos{
+        font-size: 55px;
+        
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #hero {background-image: url(../img/main.jpg);}
+    
+    
+    .container {
+        grid-template-columns: 1fr;
+    }   
+}
+
